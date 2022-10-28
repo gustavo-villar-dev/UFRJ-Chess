@@ -9,13 +9,13 @@ import Pieces.*;
 
 public class Square {
     private Piece piece;
-    private int xPos;
-    private int yPos;
+    private int row;
+    private int col;
 
     //constructor
-    public Square(int _xPos, int _yPos, Piece _piece){
-        this.setXPos(_xPos);
-        this.setYPos(_yPos);
+    public Square(int _row, int _col, Piece _piece){
+        this.setRow(_row);
+        this.setCol(_col);
         this.setPiece(_piece);
     }
 
@@ -30,19 +30,19 @@ public class Square {
         return piece;
     }
     //xPos
-    public void setXPos(int _xPos){
-        this.xPos = _xPos;
+    public void setRow(int _row){
+        this.row = _row;
     }
 
-    public int getXPos() {
-        return xPos;
+    public int getRow() {
+        return row;
     }
     //yPos
-    public void setYPos(int _yPos) {
-        this.yPos = _yPos;
+    public void setCol(int _col) {
+        this.col = _col;
     }
 
-    public int getYPos() {
-        return yPos;
+    public int getCol() {
+        return col;
     }
 }
